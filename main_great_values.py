@@ -10,6 +10,9 @@ def fill(tape):
 def fill_tape(tape):
     file = open('tape.txt', 'r')
     g = file.readline()
+    h = g.split('0')
+    print(" a == {}".format(len(h[1].replace(' ', ''))-1))
+    print(" b == {}".format(len(h[2].replace(' ', ''))-1))
     g = g.split()
     for i in range(len(g)):
         try:
